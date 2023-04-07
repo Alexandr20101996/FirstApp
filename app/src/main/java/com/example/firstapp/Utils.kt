@@ -32,7 +32,7 @@ suspend fun loadSvg(imageView: ImageView, url: String){
     if (url.lowercase(Locale.ENGLISH).endsWith("svg")){
         val imageLoader = ImageLoader.Builder(imageView.context)
             .components{
-                add(SvgDecoder(imageView.context))
+
             }
         .build()
         val request = ImageRequest.Builder(imageView.context)
